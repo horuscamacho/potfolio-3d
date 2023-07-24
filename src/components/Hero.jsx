@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hola, Me llamo <span className="text-[#915eff]">Horus</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 text-sm`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
             Desarrollo aplicaciones web en frameworks{" "}
             <br className="sm:block hidden" /> como Next JS y Angular.
           </p>
