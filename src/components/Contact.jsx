@@ -68,6 +68,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Nombre:</span>
             <input
+              onChange={handleChange}
               type="text"
               name="name"
               placeholder="Tu nombre"
@@ -78,6 +79,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Email:</span>
             <input
+              onChange={handleChange}
               type="email"
               name="email"
               value={form.email}
@@ -88,6 +90,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Mensaje:</span>
             <textarea
+              onChange={handleChange}
               rows="7"
               name="message"
               placeholder="Déjame un comentario y me pondré en contacto tan pronto como me sea posible."
