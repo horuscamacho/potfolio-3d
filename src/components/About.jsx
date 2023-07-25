@@ -50,7 +50,7 @@ const About = () => {
         Typescript, React, Node.js, Next.js, Angular, Three.js, y otras
         tecnologías. Me gusta aprender cosas nuevas constantemente para poder
         implementarlas en nuevos y desafiantes proyectos. Trabajemos juntos y
-        hagamos realidad tus ideas!
+        hagamos realidad tus ideas! 🚀
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
