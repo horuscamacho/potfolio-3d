@@ -15,9 +15,42 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_orek92m",
+        "template_sg3t7ci",
+        {
+          from_name: form.name,
+          to_name: "Sinhudev",
+          from_email: form.email,
+          to_email: "horussinhue.camacho@cesantares.edu.mx",
+          message: form.message,
+        },
+        "sdOfLmsxMb4uMMW-a"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert(
+            "Gracias, tan pronto como me sea posible me pondré en contacto"
+          );
+          setForm({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Algo salió mal");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
