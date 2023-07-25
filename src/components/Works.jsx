@@ -2,6 +2,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles.js";
 import { github } from "../assets";
+import browser from "../assets/browser.png";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants/index.js";
 import { fadeIn, textVariant } from "../utils/motion.js";
@@ -41,8 +42,8 @@ const ProjectCard = ({
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src={github}
-              alt={github}
+              src={browser}
+              alt={browser}
               className="w-1/2 h-1/2 object-contain"
             />
           </div>
@@ -90,4 +91,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "trabajo");
+export default SectionWrapper(Works, "");
